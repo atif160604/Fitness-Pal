@@ -6,3 +6,13 @@
 //
 
 import Foundation
+
+struct Macro {
+    var name: String
+    var amount: Int
+    var consumed: Int
+    
+    var remaining: Int {
+        amount - consumed
+    }
+}

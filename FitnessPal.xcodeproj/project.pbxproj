@@ -11,6 +11,8 @@
 		765A26032C3AFACF0079370A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765A26022C3AFACF0079370A /* ContentView.swift */; };
 		765A26052C3AFAD10079370A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 765A26042C3AFAD10079370A /* Assets.xcassets */; };
 		765A26082C3AFAD10079370A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 765A26072C3AFAD10079370A /* Preview Assets.xcassets */; };
+		765A260F2C3C4B530079370A /* MacroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765A260E2C3C4B530079370A /* MacroView.swift */; };
+		765A26112C3C4B5C0079370A /* Macro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765A26102C3C4B5C0079370A /* Macro.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		765A26022C3AFACF0079370A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		765A26042C3AFAD10079370A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		765A26072C3AFAD10079370A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		765A260E2C3C4B530079370A /* MacroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacroView.swift; sourceTree = "<group>"; };
+		765A26102C3C4B5C0079370A /* Macro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Macro.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +57,8 @@
 			children = (
 				765A26002C3AFACF0079370A /* FitnessPalApp.swift */,
 				765A26022C3AFACF0079370A /* ContentView.swift */,
+				765A260E2C3C4B530079370A /* MacroView.swift */,
+				765A26102C3C4B5C0079370A /* Macro.swift */,
 				765A26042C3AFAD10079370A /* Assets.xcassets */,
 				765A26062C3AFAD10079370A /* Preview Content */,
 			);
@@ -137,7 +143,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				765A26112C3C4B5C0079370A /* Macro.swift in Sources */,
 				765A26032C3AFACF0079370A /* ContentView.swift in Sources */,
+				765A260F2C3C4B530079370A /* MacroView.swift in Sources */,
 				765A26012C3AFACF0079370A /* FitnessPalApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
