@@ -11,8 +11,9 @@ struct MacroView: View {
     var macro: Macro
     
     var body: some View {
-        VStack {
+        VStack(alignment: .center) {
             Text(macro.name)
+                .foregroundStyle(macro.color)
             
             VStack {
                 Text("\(macro.consumed)")
@@ -21,7 +22,7 @@ struct MacroView: View {
                 Text("/\(macro.amount)")
                     .foregroundStyle(.secondary)
             }
-                .frame(width: 75, height: 75, alignment: .center)
+                .frame(width: 75, height: 75)
                 .padding()
                 .overlay(
                     ZStack {
@@ -34,8 +35,9 @@ struct MacroView: View {
                         // Second circle to overlay color and to indicate how much has been consumed
                         Circle()
                             .size(width: 75, height: 75)
-                            .trim(from: 0, to: 0.5)
-                            .stroke(Color.blue, style: StrokeStyle(lineWidth: 10))
+                            .trim(from: 0, to: macro.percent)
+                            .stroke(macro.color, style: StrokeStyle(lineWidth: 10))
+                            .rotationEffect(.init(degrees: -90))
                             .padding()
                     }
                 )
@@ -45,5 +47,5 @@ struct MacroView: View {
 }
 
 #Preview {
-    MacroView(macro: Macro(name: "Protein", amount: 50, consumed: 10))
+    MacroView(macro: Macro(name: "Protein", amount: 100, consumed: 50, color: Color.blue))
 }
