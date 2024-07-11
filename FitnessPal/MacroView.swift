@@ -18,6 +18,7 @@ struct MacroView: View {
             VStack {
                 Text("\(macro.consumed)")
                     .font(.headline)
+                    .foregroundStyle(.black)
                 
                 Text("/\(macro.amount)")
                     .foregroundStyle(.secondary)
@@ -41,7 +42,8 @@ struct MacroView: View {
                             .padding()
                     }
                 )
-            Text("\(macro.remaining)g left")
+            Text("\(macro.remaining)g \(macro.overAte ? "excess" : "left")")
+                .foregroundStyle(.black)
         }
     }
 }
