@@ -19,24 +19,25 @@ struct AddMacroView: View {
     @State private var carbohydrateAmount = 0
     
     var body: some View {
-        VStack {
-            List {
-                Section("Add quantity") {
-                    HStack() {
-                        Text("Protein")
-                        Spacer()
-                        TextField("amount", value: $proteinAmount, format: .number)
-                    }
-                    HStack() {
-                        Text("Fat")
-                        Spacer()
-                        TextField("amount", value: $fatAmount, format: .number)
-                    }
-                    HStack() {
-                        Text("Carbohydrate")
-                        Spacer()
-                        TextField("amount", value: $carbohydrateAmount, format: .number)
-                    }
+        List {
+            Section("Add quantity") {
+                HStack {
+                    Text("Protein")
+                    Spacer()
+                    TextField("amount", value: $proteinAmount, format: .number)
+                        .frame(maxWidth: 5)
+                }
+                HStack {
+                    Text("Fat")
+                    Spacer()
+                    TextField("amount", value: $fatAmount, format: .number)
+                        .frame(maxWidth: 5)
+                }
+                HStack {
+                    Text("Carbohydrate")
+                    Spacer()
+                    TextField("amount", value: $carbohydrateAmount, format: .number)
+                        .frame(maxWidth: 5)
                 }
             }
         }
@@ -46,6 +47,7 @@ struct AddMacroView: View {
             carbohydrateMacro.consumed += carbohydrateAmount
             dismiss()
         }
+
     }
 }
 

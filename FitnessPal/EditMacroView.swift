@@ -29,14 +29,17 @@ struct EditMacroView: View {
                     TextField("How much protein do you want to consume in a day", value: $carbohydrateAmount, format: .number )
                 }
             }
+            .frame(maxHeight: 500)
+            .border(Color.black)
             
             Button("Save") {
                 proteinMacro.amount = proteinAmount
                 fatMacro.amount = fatAmount
                 carbohydrateMacro.amount = carbohydrateAmount
             }
-            
+            Spacer()
         }
+        .border(Color.red)
     }
 }
 
