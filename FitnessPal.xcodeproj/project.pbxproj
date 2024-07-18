@@ -19,6 +19,9 @@
 		765A26192C41F94E0079370A /* AddFoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765A26182C41F94E0079370A /* AddFoodView.swift */; };
 		765A261B2C4711150079370A /* MacroOverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765A261A2C4711150079370A /* MacroOverView.swift */; };
 		765A261D2C4892870079370A /* LogMealView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765A261C2C4892870079370A /* LogMealView.swift */; };
+		765A261F2C4961710079370A /* FoodInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765A261E2C4961710079370A /* FoodInfo.swift */; };
+		765A26232C49B52B0079370A /* MealInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765A26222C49B52B0079370A /* MealInfo.swift */; };
+		765A26252C49B69A0079370A /* MealOverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765A26242C49B69A0079370A /* MealOverView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +38,9 @@
 		765A26182C41F94E0079370A /* AddFoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFoodView.swift; sourceTree = "<group>"; };
 		765A261A2C4711150079370A /* MacroOverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacroOverView.swift; sourceTree = "<group>"; };
 		765A261C2C4892870079370A /* LogMealView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogMealView.swift; sourceTree = "<group>"; };
+		765A261E2C4961710079370A /* FoodInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodInfo.swift; sourceTree = "<group>"; };
+		765A26222C49B52B0079370A /* MealInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealInfo.swift; sourceTree = "<group>"; };
+		765A26242C49B69A0079370A /* MealOverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealOverView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,16 +73,11 @@
 		765A25FF2C3AFACF0079370A /* FitnessPal */ = {
 			isa = PBXGroup;
 			children = (
+				765A26212C4965890079370A /* Logging */,
+				765A26202C49655B0079370A /* Macro */,
 				765A26002C3AFACF0079370A /* FitnessPalApp.swift */,
-				765A26142C3DE87E0079370A /* AddMacroView.swift */,
-				765A26182C41F94E0079370A /* AddFoodView.swift */,
 				765A26162C41F7400079370A /* Test.swift */,
 				765A26022C3AFACF0079370A /* ContentView.swift */,
-				765A261C2C4892870079370A /* LogMealView.swift */,
-				765A261A2C4711150079370A /* MacroOverView.swift */,
-				765A26122C3DD1790079370A /* EditMacroView.swift */,
-				765A260E2C3C4B530079370A /* MacroView.swift */,
-				765A26102C3C4B5C0079370A /* Macro.swift */,
 				765A26042C3AFAD10079370A /* Assets.xcassets */,
 				765A26062C3AFAD10079370A /* Preview Content */,
 			);
@@ -89,6 +90,30 @@
 				765A26072C3AFAD10079370A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		765A26202C49655B0079370A /* Macro */ = {
+			isa = PBXGroup;
+			children = (
+				765A261A2C4711150079370A /* MacroOverView.swift */,
+				765A26122C3DD1790079370A /* EditMacroView.swift */,
+				765A260E2C3C4B530079370A /* MacroView.swift */,
+				765A26102C3C4B5C0079370A /* Macro.swift */,
+				765A26142C3DE87E0079370A /* AddMacroView.swift */,
+			);
+			path = Macro;
+			sourceTree = "<group>";
+		};
+		765A26212C4965890079370A /* Logging */ = {
+			isa = PBXGroup;
+			children = (
+				765A26182C41F94E0079370A /* AddFoodView.swift */,
+				765A26242C49B69A0079370A /* MealOverView.swift */,
+				765A261E2C4961710079370A /* FoodInfo.swift */,
+				765A261C2C4892870079370A /* LogMealView.swift */,
+				765A26222C49B52B0079370A /* MealInfo.swift */,
+			);
+			path = Logging;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,13 +186,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				765A26232C49B52B0079370A /* MealInfo.swift in Sources */,
 				765A26192C41F94E0079370A /* AddFoodView.swift in Sources */,
 				765A26112C3C4B5C0079370A /* Macro.swift in Sources */,
 				765A26132C3DD1790079370A /* EditMacroView.swift in Sources */,
 				765A26032C3AFACF0079370A /* ContentView.swift in Sources */,
 				765A261D2C4892870079370A /* LogMealView.swift in Sources */,
 				765A26172C41F7400079370A /* Test.swift in Sources */,
+				765A261F2C4961710079370A /* FoodInfo.swift in Sources */,
 				765A260F2C3C4B530079370A /* MacroView.swift in Sources */,
+				765A26252C49B69A0079370A /* MealOverView.swift in Sources */,
 				765A26012C3AFACF0079370A /* FitnessPalApp.swift in Sources */,
 				765A26152C3DE87E0079370A /* AddMacroView.swift in Sources */,
 				765A261B2C4711150079370A /* MacroOverView.swift in Sources */,
