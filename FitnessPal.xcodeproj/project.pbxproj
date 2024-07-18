@@ -17,6 +17,8 @@
 		765A26152C3DE87E0079370A /* AddMacroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765A26142C3DE87E0079370A /* AddMacroView.swift */; };
 		765A26172C41F7400079370A /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765A26162C41F7400079370A /* Test.swift */; };
 		765A26192C41F94E0079370A /* AddFoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765A26182C41F94E0079370A /* AddFoodView.swift */; };
+		765A261B2C4711150079370A /* MacroOverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765A261A2C4711150079370A /* MacroOverView.swift */; };
+		765A261D2C4892870079370A /* LogMealView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765A261C2C4892870079370A /* LogMealView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,8 @@
 		765A26142C3DE87E0079370A /* AddMacroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMacroView.swift; sourceTree = "<group>"; };
 		765A26162C41F7400079370A /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
 		765A26182C41F94E0079370A /* AddFoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFoodView.swift; sourceTree = "<group>"; };
+		765A261A2C4711150079370A /* MacroOverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacroOverView.swift; sourceTree = "<group>"; };
+		765A261C2C4892870079370A /* LogMealView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogMealView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +72,8 @@
 				765A26182C41F94E0079370A /* AddFoodView.swift */,
 				765A26162C41F7400079370A /* Test.swift */,
 				765A26022C3AFACF0079370A /* ContentView.swift */,
+				765A261C2C4892870079370A /* LogMealView.swift */,
+				765A261A2C4711150079370A /* MacroOverView.swift */,
 				765A26122C3DD1790079370A /* EditMacroView.swift */,
 				765A260E2C3C4B530079370A /* MacroView.swift */,
 				765A26102C3C4B5C0079370A /* Macro.swift */,
@@ -159,10 +165,12 @@
 				765A26112C3C4B5C0079370A /* Macro.swift in Sources */,
 				765A26132C3DD1790079370A /* EditMacroView.swift in Sources */,
 				765A26032C3AFACF0079370A /* ContentView.swift in Sources */,
+				765A261D2C4892870079370A /* LogMealView.swift in Sources */,
 				765A26172C41F7400079370A /* Test.swift in Sources */,
 				765A260F2C3C4B530079370A /* MacroView.swift in Sources */,
 				765A26012C3AFACF0079370A /* FitnessPalApp.swift in Sources */,
 				765A26152C3DE87E0079370A /* AddMacroView.swift in Sources */,
+				765A261B2C4711150079370A /* MacroOverView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
