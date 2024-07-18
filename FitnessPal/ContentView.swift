@@ -23,7 +23,7 @@ struct ContentView: View {
                     Label("Workout", systemImage: "pencil.circle")
                 }
             
-            Text("Log Meal")
+            AddFoodView()
                 .tabItem {
                     Label("Log Meal", systemImage: "pencil")
                 }
