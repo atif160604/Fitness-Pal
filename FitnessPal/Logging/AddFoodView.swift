@@ -13,6 +13,10 @@ struct AddFoodView: View {
     @State private var dinner = MealInfo(name: "Dinner", food: [])
     @State private var snacks = MealInfo(name: "Snacks", food: [])
     
+    var proteinOverview: Macro
+    var carbohydrateOverview: Macro
+    var fatOverview: Macro
+    
     var body: some View {
         NavigationStack {
             ZStack {
@@ -22,25 +26,25 @@ struct AddFoodView: View {
                     Text("Toal calories = calories - calories")
                         .foregroundStyle(Color.white)
                     NavigationLink {
-                        LogMealView()
+                        LogMealView(proteinOverview: proteinOverview, carbohydrateOverview: carbohydrateOverview, fatOverview: fatOverview, foodList: breakfast)
                     } label: {
                         MealOverView(meal: breakfast)
                     }
                     
                     NavigationLink {
-                        LogMealView()
+                        LogMealView(proteinOverview: proteinOverview, carbohydrateOverview: carbohydrateOverview, fatOverview: fatOverview, foodList: lunch)
                     } label: {
                         MealOverView(meal: lunch)
                     }
                     
                     NavigationLink {
-                        LogMealView()
+                        LogMealView(proteinOverview: proteinOverview, carbohydrateOverview: carbohydrateOverview, fatOverview: fatOverview, foodList: dinner)
                     } label: {
                         MealOverView(meal: dinner)
                     }
                     
                     NavigationLink {
-                        LogMealView()
+                        LogMealView(proteinOverview: proteinOverview, carbohydrateOverview: carbohydrateOverview, fatOverview: fatOverview, foodList: snacks)
                     } label: {
                         MealOverView(meal: snacks)
                     }
@@ -51,5 +55,5 @@ struct AddFoodView: View {
 }
 
 #Preview {
-    AddFoodView()
+    AddFoodView(proteinOverview: .proteinMacro, carbohydrateOverview: .carbohydrateMacro, fatOverview: .fatMacro)
 }

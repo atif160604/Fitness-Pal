@@ -8,9 +8,9 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var proteinMacro = Macro(name: "Protein", amount: 150, consumed: 20, color: Color.orange)
-    @State private var carbohydrateMacro = Macro(name: "Carbohydrate", amount: 100, consumed: 50, color: Color.blue)
-    @State private var fatMacro = Macro(name: "Fat", amount: 50, consumed: 60, color: Color.purple)
+    @State private var proteinMacro = Macro(name: "Protein", amount: 150, consumed: 0, color: Color.orange)
+    @State private var carbohydrateMacro = Macro(name: "Carbohydrate", amount: 100, consumed: 0, color: Color.blue)
+    @State private var fatMacro = Macro(name: "Fat", amount: 50, consumed: 0, color: Color.purple)
     
     var body: some View {
         TabView {
@@ -23,7 +23,7 @@ struct ContentView: View {
                     Label("Workout", systemImage: "pencil.circle")
                 }
             
-            AddFoodView()
+            AddFoodView(proteinOverview: proteinMacro, carbohydrateOverview: carbohydrateMacro, fatOverview: fatMacro)
                 .tabItem {
                     Label("Log Meal", systemImage: "pencil")
                 }

@@ -7,7 +7,8 @@
 
 import Foundation
 
-struct MealInfo {
+@Observable
+class MealInfo {
     var name: String
     var food: [FoodInfo]
     
@@ -32,11 +33,16 @@ struct MealInfo {
     }
     
     var proteinPercent: Double {
-        return Double(totalProtein) / (Double(totalFat) + Double(totalProtein) + Double(totalCarbohydrate))
+        return (Double(totalProtein) / (Double(totalFat) + Double(totalProtein) + Double(totalCarbohydrate))) + carbPercent
     }
     
     var fatPercent: Double {
-        return Double(totalFat) / (Double(totalFat) + Double(totalProtein) + Double(totalCarbohydrate))
+        return (Double(totalFat) / (Double(totalFat) + Double(totalProtein) + Double(totalCarbohydrate))) + proteinPercent
+    }
+    
+    init(name: String, food: [FoodInfo]) {
+        self.name = name
+        self.food = food
     }
     
 }

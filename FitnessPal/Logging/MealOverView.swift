@@ -61,5 +61,5 @@ struct MealOverView: View {
 }
 
 #Preview {
-    MealOverView(meal: MealInfo(name: "Breakfast", food: []))
+    MealOverView(meal: MealInfo(name: "Breakfast", food: [FoodInfo(name: "oats", calories: 300, carbohydrate: 20, protein: 30, fat: 50)]))
 }

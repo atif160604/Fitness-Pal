@@ -8,19 +8,31 @@
 import SwiftUI
 
 struct LogMealView: View {
-    @State private var allFood: [FoodInfo] = [FoodInfo(name: "Oats", calories: 200, carbohydrate: 120, protein: 10, fat: 24)]
+    @State private var allFood: [FoodInfo] = [FoodInfo(name: "Oats", calories: 200, carbohydrate: 40, protein: 25, fat: 10)]
+    
+    var proteinOverview: Macro
+    var carbohydrateOverview: Macro
+    var fatOverview: Macro
+    var foodList: MealInfo
     
     var body: some View {
         List {
             ForEach(allFood, id: \.id) { food in
-                VStack(alignment: .leading) {
-                    Text("\(food.name)")
-                    HStack {
-                        Text("Carbohydrate: \(food.carbohydrate)")
-                        Text("Protein: \(food.protein)")
-                        Text("Fat: \(food.fat)")
+                Button {
+                    foodList.food.append(food)
+                    proteinOverview.consumed += food.protein
+                    carbohydrateOverview.consumed += food.carbohydrate
+                    fatOverview.consumed += food.fat
+                } label: {
+                    VStack(alignment: .leading) {
+                        Text("\(food.name)")
+                        HStack {
+                            Text("Carbohydrate: \(food.carbohydrate)")
+                            Text("Protein: \(food.protein)")
+                            Text("Fat: \(food.fat)")
+                        }
+                        .font(.caption)
                     }
-                    .font(.caption)
                 }
             }
         }
@@ -28,5 +40,5 @@ struct LogMealView: View {
 }
 
 #Preview {
-    LogMealView()
+    LogMealView(proteinOverview: .proteinMacro , carbohydrateOverview: .carbohydrateMacro, fatOverview: .fatMacro, foodList: MealInfo(name: "Breakfast", food: []))
 }
