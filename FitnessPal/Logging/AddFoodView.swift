@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import SwiftData
 
 struct AddFoodView: View {
     @State private var breakfast = MealInfo(name: "Breakfast", food: [])

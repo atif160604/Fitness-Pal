@@ -22,6 +22,8 @@
 		765A261F2C4961710079370A /* FoodInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765A261E2C4961710079370A /* FoodInfo.swift */; };
 		765A26232C49B52B0079370A /* MealInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765A26222C49B52B0079370A /* MealInfo.swift */; };
 		765A26252C49B69A0079370A /* MealOverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765A26242C49B69A0079370A /* MealOverView.swift */; };
+		765A262B2C4C75580079370A /* MealInfoSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765A262A2C4C75580079370A /* MealInfoSample.swift */; };
+		765A262D2C4C75A70079370A /* PreviewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765A262C2C4C75A70079370A /* PreviewContainer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +43,8 @@
 		765A261E2C4961710079370A /* FoodInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodInfo.swift; sourceTree = "<group>"; };
 		765A26222C49B52B0079370A /* MealInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealInfo.swift; sourceTree = "<group>"; };
 		765A26242C49B69A0079370A /* MealOverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealOverView.swift; sourceTree = "<group>"; };
+		765A262A2C4C75580079370A /* MealInfoSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealInfoSample.swift; sourceTree = "<group>"; };
+		765A262C2C4C75A70079370A /* PreviewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewContainer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +92,8 @@
 			isa = PBXGroup;
 			children = (
 				765A26072C3AFAD10079370A /* Preview Assets.xcassets */,
+				765A262A2C4C75580079370A /* MealInfoSample.swift */,
+				765A262C2C4C75A70079370A /* PreviewContainer.swift */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -190,10 +196,12 @@
 				765A26192C41F94E0079370A /* AddFoodView.swift in Sources */,
 				765A26112C3C4B5C0079370A /* Macro.swift in Sources */,
 				765A26132C3DD1790079370A /* EditMacroView.swift in Sources */,
+				765A262B2C4C75580079370A /* MealInfoSample.swift in Sources */,
 				765A26032C3AFACF0079370A /* ContentView.swift in Sources */,
 				765A261D2C4892870079370A /* LogMealView.swift in Sources */,
 				765A26172C41F7400079370A /* Test.swift in Sources */,
 				765A261F2C4961710079370A /* FoodInfo.swift in Sources */,
+				765A262D2C4C75A70079370A /* PreviewContainer.swift in Sources */,
 				765A260F2C3C4B530079370A /* MacroView.swift in Sources */,
 				765A26252C49B69A0079370A /* MealOverView.swift in Sources */,
 				765A26012C3AFACF0079370A /* FitnessPalApp.swift in Sources */,

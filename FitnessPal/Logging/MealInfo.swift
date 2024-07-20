@@ -6,8 +6,9 @@
 //
 
 import Foundation
+import SwiftData
 
-@Observable
+@Model
 class MealInfo {
     var name: String
     var food: [FoodInfo]
